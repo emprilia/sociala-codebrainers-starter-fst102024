@@ -1,3 +1,5 @@
+console.log('initial commit for sociala')
+
 const hamburger = document.querySelector('.hamburger') as HTMLDivElement;
 const sidebar = document.querySelector('.sidebar') as HTMLDivElement;
 
