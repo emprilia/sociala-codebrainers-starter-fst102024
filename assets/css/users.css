@@ -1,0 +1,16 @@
+.users {
+  margin: 50px 0 0 0;
+}
+.users__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.users__box {
+  width: 25%;
+  padding: 0 15px;
+  margin: 0 0 30px 0;
+}

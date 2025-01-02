@@ -1,0 +1,91 @@
+.auth {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    &__bg {
+        width: 40%;
+        background-image: url('/assets/img/login-bg.jpg');
+        background-position: center;
+        background-size: cover;
+
+        &--register {
+            background-image: url('/assets/img/login-bg-2.jpg');
+        }
+
+        @include forTablet {
+            display: none;
+        }
+
+    }
+
+    &__data {
+        width: 60%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        @include forTablet {
+            width: 100%;
+        }
+    }
+
+    &__center {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 15px 0;
+    }
+
+    &__title {
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    &__formRow {
+        margin: 0 0 10px 0;
+    }
+
+    &__formInput {
+        position: relative;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 20px 10px 20px 40px;
+        border-radius: 5px;
+        border: 2px solid $authInputBorderColor;
+        outline: none;
+
+        &:focus {
+            border-color: $authInputBorderBlurColor;
+        }
+
+    }
+
+    &__inputIcon {
+        position: absolute;
+        inset: 19px auto auto 10px;
+        font-size: 25px;
+        color: $authInputIconColor;
+
+    }
+
+    &__button {
+        width: 100%;
+        background-color: $authButtonBgColor;
+        color: $authButtonFontColor;
+        border-radius: 5px;
+        border: none;
+        padding: 20px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__icon {
+        font-size: 36px;
+        color: $logoBoltColor;
+
+    }
+
+    &__name {
+        font-weight: 900;
+        font-size: 36px;
+        color: $logoTextColor;
+        margin: -10px 0 0 0;
+
+    }
+}

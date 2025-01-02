@@ -1,0 +1,46 @@
+body {
+    font-family: $mainFontFamilly;
+    background-color: $bodyBgColor;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headerFontFamilly;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 100px 0 0 280px;
+
+    @include forTablet {
+        padding: 100px 0 0 0;
+    }
+}
+
+@keyframes spin {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.spinIcon {
+    animation: spin 4s linear infinite;
+}

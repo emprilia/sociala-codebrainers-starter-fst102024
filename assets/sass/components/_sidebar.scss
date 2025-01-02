@@ -1,0 +1,107 @@
+.sidebar {
+    position: fixed;
+    padding: 0 10px 0 10px;
+    inset: 97px auto auto 0;
+    width: 280px;
+    height: calc(100% - 97px);
+    overflow-y: scroll;
+
+
+
+    @include forTablet {
+        display: none;
+    }
+
+    &--open {
+        display: block;
+        height: 100%;
+        inset: 0 auto auto 0;
+        z-index: 300;
+    }
+
+
+    &__card {
+        background-color: $sidebarCardBgColor;
+        padding: 20px;
+        margin: 0 0 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, .05);
+    }
+
+    &__cardTitle {
+        font-size: 12px;
+        margin: 0 0 10px 0;
+        color: $sidebarCardTitleFontColor;
+    }
+
+    &__cardList {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__cardListLink {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__ListIcon {
+        color: $sidebarCardListIconFontColor;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--bg {
+            border-radius: 50%;
+            background-color: $sidebarCardNewsFeedBgColorFirst;
+            color: $sidebarCardNewsFeedFontColor;
+        }
+
+        &--bg1 {
+            border-radius: 50%;
+            background-color: $sidebarCardNewsFeedBgColorSecond;
+            color: $sidebarCardNewsFeedFontColor;
+        }
+
+        &--bg2 {
+            border-radius: 50%;
+            background-color: $sidebarCardNewsFeedBgColorThird;
+            color: $sidebarCardNewsFeedFontColor;
+        }
+
+        &--bg3 {
+            border-radius: 50%;
+            background-color: $sidebarCardNewsFeedBgColorFourth;
+            color: $sidebarCardNewsFeedFontColor;
+        }
+
+        &--bg4 {
+            border-radius: 50%;
+            background-color: $sidebarCardNewsFeedBgColorFifth;
+            color: $sidebarCardNewsFeedFontColor;
+        }
+
+
+        &--grey {
+            color: $sidebarCardAccountIconFontColor;
+        }
+
+    }
+
+    &__ListName {
+        font-size: 15px;
+        color: $sidebarCardListFontColor;
+        font-weight: 600;
+
+        &:hover {
+            color: $sidebarCardListFontColorHover;
+        }
+    }
+
+}
