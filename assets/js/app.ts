@@ -1,4 +1,5 @@
-console.log('initial commit for sociala')
+console.log('initial commit for sociala');
+console.log('second sociala commit');
 
 const hamburger = document.querySelector('.hamburger') as HTMLDivElement;
 const sidebar = document.querySelector('.sidebar') as HTMLDivElement;
